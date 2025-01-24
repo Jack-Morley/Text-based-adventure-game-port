@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Based Adventure Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="changetitle()">
+  <h1>Jack's Text Based Adventure Game!</h1>
+    <table>
+    <tr>
+      <th>
+      </th>
+      <th id="up"> 
+      </th>
+      <th>
+      </th>
+      </tr>
+      <tr>
+      <th id="left"> 
+      </th>
+      <th id="cord">
+      </th>
+      <th id="right"> 
+      </th>
+      </tr>
+      <tr>
+      <th>       
+      </th>
+      <th id="down">       
+      </th>
+      <th>      
+      </th>
+    </tr>
+  </table>
+        <br>
+        <button onclick="north()">N</button>
+        <br>
+        <button onclick="west()">W</button>
+        <button onclick="east()">E</button>
+        <br>
+        <button onclick="south()">S</button> 
+        <br>
+        <br>
+        <button onclick="use()">Interact</button>
+        <br>
+        <br>
+        <h4 id="room">Room: </h4>
+        <br>
+        <h4 id="health">Health: </h4>
+        <br>
+        <h4 id="coins">Coins: </h4>
+        <br>
+        <div id="story">
+          <story id="description"></story>
+        </div>
+        <h3>HOW TO PLAY: Can only move either north, east, south or west. The direction that you can move is indicated by the box on the top. Some rooms contain treasure to collect, however it is not mandatory to collect all the coins. Some rooms contain monsters which will attack, dealing damage to you. If your HP reaches 0 you lose and must try again. In the box directly above, you are able to see the descriptions of the rooms that you are in. The (?) symbol indicates that there is something you can interact with. Interactions work only once per room. Find the exit to win!</h3>
+        <button onclick="reset()">RESET</button>
+</body>
+</html>
